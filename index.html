@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DateTimeCord</title>
+  </head>
+  <body>
+    <div class="card">
+      <label>Date</label>
+      <input id="date" type="date" />
+      <label>Time</label>
+      <input id="time" type="time" />
+      <br />
+      <label>Format</label>
+      <select id="format">
+        <option value="t">Short Time</option>
+        <option value="T">Long Time</option>
+        <option value="d">Short Date</option>
+        <option value="D">Long Date</option>
+        <option value="f" selected>Short Date/Time</option>
+        <option value="F">Long Date/Time</option>
+        <option value="R">Relative Time</option>
+      </select>
+      <label>Result</label>
+      <span id="output" />
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
